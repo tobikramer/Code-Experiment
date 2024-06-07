@@ -1,11 +1,102 @@
-body {
-    font-family: Helvetica;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
 }
 
 header {
-    color: green;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('sources/monkey_d__luffy_hd_one_piece_2.jpg') no-repeat center center/cover;
+}
 
-    li {
-        color: #555432;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: für eine dunkle Überlagerung */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 400px; /* Passe die Größe des Logos nach Bedarf an */
+    margin-bottom: 0em;
+    margin-top: 1em;
+}
+
+.button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: darkred;
+}
+
+.button-scnd {
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5em;
+    transition: background-color 0.3s ease;
+}
+
+.button-scnd:hover {
+    background-color: white;
+    color: black;
+}
+
+.tag {  
+    background-color: transparent;
+    color: #AAAAAA;
+    border: 2px solid #AAAAAA;
+    padding: 0.5em 1.5em;
+    margin-bottom: 2em;
+    font-size: 0.75em;
+    border-radius: 5em;
     }
+
+
+
+.projektbeschrieb {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
