@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="/script.js"></script>
 
 </head>
 
@@ -22,8 +23,7 @@
             <div class="text-box">
                 <h2>Abenteuer auf der Spiralinsel</h2>
             </div>
-            <button class="button-scnd">Trailer</button>
-        </div>
+            <button onclick="scrollToTrailer()" class="button-scnd">Trailer</button>
     </header>
 
     <main>
@@ -38,7 +38,43 @@
             </div>
         </section>
 
+        <section class="photo-grid">
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 5">
+            </div>
+            <div class="photo">
+                <img src="sources/monkey_d__luffy_hd_one_piece_2.jpg" alt="Foto 6">
+            </div>
+        </section>
+
+        <section id="trailer-container" class="trailer">
+            <div class="trailer-container">
+                <div class="trailer-placeholder"></div>
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 TK Films. Alle Rechte vorbehalten.</p>
+            <ul class="footer-links">
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
