@@ -9,9 +9,16 @@
 body, html {
     height: 100%;
     font-family: Poppins;
-    background-color: red;
+    background-color: black;
     color: white;
     scroll-behavior: smooth;
+}
+
+@media (min-width: 1280px) {
+    main {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }
 
 section {
@@ -20,10 +27,7 @@ section {
 }
 
 .section-divider {
-    border-bottom: 1px solid #3e3e3e; 
-    margin: 0 auto; 
-    width: 100vw;
-    max-width: 1200px;
+    border-bottom: 1px solid #8f8f8f; 
 }
 
 /* TYPO */
@@ -133,6 +137,15 @@ header {
     flex-direction: column;
     max-width: 80%;
     margin: 2em;
+}
+
+@media (max-width: 600px) {
+    .projektbeschrieb {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 2em;
+    }
 }
 
 /* Photo-Section */
@@ -249,9 +262,6 @@ header {
     border-width: 15px 0 15px 25px;
     border-color: transparent transparent transparent white;
 }
-
-
-
 
 
 /* Footer */
